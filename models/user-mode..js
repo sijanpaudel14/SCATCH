@@ -25,10 +25,6 @@ const userSchema = new mongoose.Schema(
       type: [{ productId: String, quantity: Number }], // Structure for clarity
       default: [],
     },
-    isAdmin: {
-      type: Boolean,
-      default: false, // Default value explicitly set
-    },
     orders: {
       type: [
         {
